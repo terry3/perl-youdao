@@ -20,11 +20,14 @@ Youdao dict in perl.
 
 3.使用
 使用 shell 命令
+
 	 'perl youdao-perl.pl ' + 英文单词（英文句子请用 ' 括起）
-	 如：
+
 	 查询单词：
 	 命令各式：perl ./youdao-perl.pl [words]
 	 perl ./youdao-perl.pl abide abolish absurd
 	 perl ./youdao-perl.pl bleach calibration
+
+	 
 	 查询句子：
 	 perl ./youdao-perl.pl 'you are welcome
