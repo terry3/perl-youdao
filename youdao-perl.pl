@@ -15,8 +15,8 @@ binmode(STDIN, ':encoding(utf8)');
 binmode(STDOUT, ':encoding(utf8)');
 binmode(STDERR, ':encoding(utf8)');
 
-my $API_KEY = "1453965843";
-my $KEYFROM = "Shell-YouDao-Dict";
+my $API_KEY = "";
+my $KEYFROM = "";
 
 open CONF, "<./youdao-perl.ini" or die("youdao-perl.ini file is not");
 
