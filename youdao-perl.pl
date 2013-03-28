@@ -18,6 +18,21 @@ binmode(STDERR, ':encoding(utf8)');
 my $API_KEY = "1453965843";
 my $KEYFROM = "Shell-YouDao-Dict";
 
+open CONF, "<./youdao-perl.ini" or die("youdao-perl.ini file is not");
+
+my @conf = <CONF>;
+
+for my $ini (@conf){
+  if($ini =~ m/^API_KEY=(.*)$/){
+	say $1;
+	$API_KEY = $1;
+  }
+  if($ini =~ m/^KEYFROM=(.*)$/){
+	say $1;
+	$KEYFROM = $1;
+  }
+}
+
 my $DISPLAY_SIZE = 20;
 
 foreach my $word (@ARGV){
