@@ -3,13 +3,13 @@ youdao-perl
 
 Youdao dict in perl.
 
-有道词典 shell 版（perl 实现）
+有道词典 Perl 版
 
 ##1.安装
 依赖：
 		1.LWP::Simple
 		2.XML::Simple
-使用 shell 命令，安装依赖模块
+使用 cpan 命令，安装依赖模块
 	 'cpan LWP::Simple XML::Simple'
 
 ##2.申请 有道翻译API
@@ -19,7 +19,7 @@ Youdao dict in perl.
 	   API_KEY, KEYFROM 填入 youdao-perl.ini 中的相应位置并保存文件即可。
 
 ##3.使用
-使用 shell 命令
+使用 perl 命令，或者 chmod a+x youdao-perl.pl 
 
 	 'perl youdao-perl.pl ' + 英文单词（英文句子请用 ' 括起）
 
@@ -30,4 +30,4 @@ Youdao dict in perl.
 
 	 
 	 查询句子：
-	 perl ./youdao-perl.pl 'you are welcome
+	 perl ./youdao-perl.pl 'you are welcome'
